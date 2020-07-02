@@ -146,11 +146,11 @@ function wcfplugin_save_name_fields($customer_id)
         update_user_meta($customer_id, 'billing_phone', sanitize_text_field($_POST['billing_phone']));
         update_user_meta($customer_id, 'phone', sanitize_text_field($_POST['billing_phone']));
     }
-    if (isset($_POST['billing_address'])) {
+    if (isset($_POST['billing_address_1'])) {
         update_user_meta($customer_id, 'billing_address_1', sanitize_text_field($_POST['billing_address_1']));
         update_user_meta($customer_id, 'address_1', sanitize_text_field($_POST['billing_address_1']));
     }
-    if (isset($_POST['billing_address'])) {
+    if (isset($_POST['billing_address_2'])) {
         update_user_meta($customer_id, 'billing_address_2', sanitize_text_field($_POST['billing_address_2']));
         update_user_meta($customer_id, 'address_2', sanitize_text_field($_POST['billing_address_2']));
     }
